@@ -19,7 +19,7 @@ public class DragDrop {
     void dragAndDrop() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $ ("#column-a").dragAndDropTo($("#column-b"));
-        $("#column-a").shouldHave(text("B"));
+        $("#column-a").shouldHave(text("J"));
         $("#column-b").shouldHave(text("A"));
     }
 
