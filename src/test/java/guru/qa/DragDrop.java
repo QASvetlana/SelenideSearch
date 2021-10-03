@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class DragDrop {
     @BeforeAll
     static void setup() {
-        Configuration.startMaximized = true;
+        Configuration.startMaximized = falce;
     }
 
     @Test
