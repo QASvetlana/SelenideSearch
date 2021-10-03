@@ -12,15 +12,15 @@ import static com.codeborne.selenide.Selenide.*;
 public class DragDrop {
     @BeforeAll
     static void setup() {
-        Configuration.startMaximized = true;
+        Configuration.startMaximized = falce;
     }
 
     @Test
     void dragAndDrop() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $ ("#column-a").dragAndDropTo($("#column-b"));
-        $("#column-a").shouldHave(text("B"));
-        $("#column-b").shouldHave(text("A"));
+        $("#column-a").shouldHave(text("J"));
+        $("#column-b").shouldHave(text("K"));
     }
 
 }
